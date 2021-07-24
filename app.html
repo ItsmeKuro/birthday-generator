@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niver Generator</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <h2>Info do Cliente</h2>
+
+    <div id="infos-client">
+        <label for="">Como você chama esta pessoa:</label>
+        <input type="text" id="nick">
+        <br>
+        <br>
+
+        <label>GÊNERO: </label>
+        <ul class="gender-selector">
+            <li><input class="gender" type="radio" name="gender" value="masculino">Masculino</li>
+            <li><input class="gender" type="radio" name="gender" value="feminino">Feminino</li>
+        </ul>
+
+        <br>
+        <br>
+
+        <button type="submit" class="gerar-btn" >GERAR</button>
+
+    </div>
+
+    <div id="dialog" style="display: none;">
+        <!--- --->
+        <p class="close">X</p>
+        <p id="msg"></p>
+        <button type="button" class="accept">Nova Frase</button>
+    </div>
+
+    <script src="js/gerador.js"></script>
+</body>
+
+</html>
